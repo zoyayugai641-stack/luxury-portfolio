@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Галерея</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background:
+    linear-gradient(to bottom, rgba(0,0,0,0.88), rgba(0,0,0,0.95)),
+    url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial;
+
+    color: white;
+
+}
+
+/* Меню */
+
+.menu {
+
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 30px;
+
+    background:
+    rgba(15,15,15,0.7);
+
+    padding: 15px 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    border:
+    1px solid rgba(214,179,106,0.2);
+
+    z-index: 1000;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #d6b36a;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+
+}
+
+.menu a:hover {
+
+    color: white;
+
+    text-shadow:
+    0px 0px 10px #d6b36a;
+
+}
+
+/* Заголовок */
+
+.gallery-title {
+
+    text-align: center;
+
+    padding-top: 180px;
+
+}
+
+.gallery-title h1 {
+
+    font-size: 70px;
+
+    color: #f1d18a;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+    0px 0px 20px rgba(214,179,106,0.3);
+
+}
+
+.gallery-title p {
+
+    color: #d4d4d4;
+
+    font-size: 22px;
+
+}
+
+/* Галерея */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 30px;
+
+    padding: 60px;
+
+}
+
+/* Фото */
+
+.gallery img {
+
+    width: 100%;
+
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+
+    transition: 0.4s;
+
+    border:
+    1px solid rgba(214,179,106,0.2);
+
+}
+
+.gallery img:hover {
+
+    transform:
+    scale(1.03);
+
+    box-shadow:
+    0px 0px 30px rgba(214,179,106,0.3);
+
+}
+
+/* Телефон */
+
+@media (max-width: 900px) {
+
+.gallery {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+.gallery-title h1 {
+
+    font-size: 45px;
+
+}
+
+.gallery img {
+
+    height: 320px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Меню -->
+
+<div class="menu">
+
+<a href="index.html">Главная</a>
+
+<a href="gallery.html">Фото</a>
+
+<a href="contacts.html">Контакты</a>
+
+</div>
+
+<!-- Заголовок -->
+
+<div class="gallery-title">
+
+<h1>
+Gallery
+</h1>
+
+<p>
+Luxury aesthetic collection
+</p>
+
+</div>
+
+<!-- Галерея -->
+
+<div class="gallery">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+<img src="photo7.jpg">
+<img src="photo8.jpg">
+<img src="photo9.jpg">
+
+</div>
+
+</body>
+</html>

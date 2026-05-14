@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Luxury Portfolio</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background:
+    linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(0,0,0,0.95)),
+    url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial;
+
+    color: white;
+
+}
+
+/* Меню */
+
+.menu {
+
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 30px;
+
+    background:
+    rgba(15,15,15,0.7);
+
+    padding: 15px 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    border:
+    1px solid rgba(214,179,106,0.2);
+
+    z-index: 1000;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #d6b36a;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+
+}
+
+.menu a:hover {
+
+    color: white;
+
+    text-shadow:
+    0px 0px 10px #d6b36a;
+
+}
+
+/* Главный блок */
+
+.hero {
+
+    text-align: center;
+
+    padding-top: 180px;
+
+}
+
+.hero h1 {
+
+    font-size: 80px;
+
+    color: #f1d18a;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+    0px 0px 20px rgba(214,179,106,0.3);
+
+}
+
+.hero p {
+
+    font-size: 24px;
+
+    color: #d4d4d4;
+
+}
+
+/* Карточки */
+
+.services {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 30px;
+
+    padding: 60px;
+
+}
+
+.service-card {
+
+    background:
+    rgba(15,15,15,0.7);
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    border:
+    1px solid rgba(214,179,106,0.2);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.4s;
+
+    font-size: 22px;
+
+}
+
+.service-card:hover {
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0px 0px 25px rgba(214,179,106,0.3);
+
+}
+
+/* Галерея */
+
+.projects {
+
+    display: grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    gap: 25px;
+
+    padding: 60px;
+
+}
+
+.projects img {
+
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    transition: 0.4s;
+
+}
+
+.projects img:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+    0px 0px 25px rgba(214,179,106,0.3);
+
+}
+
+/* Кнопки */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    padding-bottom: 100px;
+
+}
+
+button {
+
+    background:
+    linear-gradient(to right, #c89b5c, #f1d18a);
+
+    border: none;
+
+    padding: 18px 35px;
+
+    border-radius: 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+    0px 0px 20px rgba(214,179,106,0.4);
+
+}
+
+/* Телефон */
+
+@media (max-width: 900px) {
+
+.services {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+.projects {
+
+    grid-template-columns:
+    1fr;
+
+}
+
+.hero h1 {
+
+    font-size: 50px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Меню -->
+
+<div class="menu">
+
+<a href="index.html">Главная</a>
+
+<a href="gallery.html">Фото</a>
+
+<a href="contacts.html">Контакты</a>
+
+</div>
+
+<!-- Главный блок -->
+
+<div class="hero">
+
+<h1>
+Luxury Portfolio
+</h1>
+
+<p>
+Modern aesthetic website
+</p>
+
+</div>
+
+<!-- Карточки -->
+
+<div class="services">
+
+<div class="service-card">
+Luxury Style
+</div>
+
+<div class="service-card">
+Modern Design
+</div>
+
+<div class="service-card">
+Creative Visuals
+</div>
+
+<div class="service-card">
+Premium Gallery
+</div>
+
+<div class="service-card">
+Aesthetic Layout
+</div>
+
+<div class="service-card">
+Luxury Experience
+</div>
+
+</div>
+
+<!-- Галерея -->
+
+<div class="projects">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+<img src="photo5.jpg">
+<img src="photo6.jpg">
+
+</div>
+
+<!-- Кнопки -->
+
+<div class="buttons">
+
+<button onclick="window.location.href='https://wa.me/996999066330'">
+
+WhatsApp
+
+</button>
+
+<button onclick="window.location.href='https://t.me/valexandrie'">
+
+Telegram
+
+</button>
+
+</div>
+
+</body>
+</html>

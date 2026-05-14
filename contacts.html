@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Контакты</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    background:
+    linear-gradient(to bottom, rgba(0,0,0,0.88), rgba(0,0,0,0.95)),
+    url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial;
+
+    color: white;
+
+}
+
+/* Меню */
+
+.menu {
+
+    position: fixed;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+
+    gap: 30px;
+
+    background:
+    rgba(15,15,15,0.7);
+
+    padding: 15px 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    border:
+    1px solid rgba(214,179,106,0.2);
+
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #d6b36a;
+
+    font-size: 17px;
+
+    transition: 0.3s;
+
+}
+
+.menu a:hover {
+
+    color: white;
+
+    text-shadow:
+    0px 0px 10px #d6b36a;
+
+}
+
+/* Главный блок */
+
+.contact-box {
+
+    width: 500px;
+
+    margin: 220px auto;
+
+    background:
+    rgba(15,15,15,0.75);
+
+    padding: 50px;
+
+    border-radius: 35px;
+
+    text-align: center;
+
+    backdrop-filter: blur(12px);
+
+    border:
+    1px solid rgba(214,179,106,0.2);
+
+    box-shadow:
+    0px 0px 30px rgba(214,179,106,0.15);
+
+}
+
+.contact-box h1 {
+
+    font-size: 55px;
+
+    color: #f1d18a;
+
+    margin-bottom: 15px;
+
+}
+
+.contact-box p {
+
+    color: #d4d4d4;
+
+    font-size: 20px;
+
+    margin-bottom: 40px;
+
+}
+
+/* Кнопки */
+
+button {
+
+    width: 100%;
+
+    padding: 18px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background:
+    linear-gradient(to right, #c89b5c, #f1d18a);
+
+    color: black;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.03);
+
+    box-shadow:
+    0px 0px 20px rgba(214,179,106,0.4);
+
+}
+
+/* Телефон */
+
+@media (max-width: 700px) {
+
+.contact-box {
+
+    width: 85%;
+
+    padding: 30px;
+
+}
+
+.contact-box h1 {
+
+    font-size: 40px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Меню -->
+
+<div class="menu">
+
+<a href="index.html">Главная</a>
+
+<a href="gallery.html">Фото</a>
+
+<a href="contacts.html">Контакты</a>
+
+</div>
+
+<!-- Контакты -->
+
+<div class="contact-box">
+
+<h1>
+Контакты
+</h1>
+
+<p>
+Связаться со мной ✨
+</p>
+
+<button onclick="window.location.href='https://t.me/valexandrie'">
+
+Telegram
+
+</button>
+
+<button onclick="window.location.href='https://wa.me/996999066330'">
+
+WhatsApp
+
+</button>
+
+</div>
+
+</body>
+</html>
